@@ -61,7 +61,7 @@ IoT-Based-Pothole-Detection-Alert-System/
 ├── SECURITY.md
 ├── arduino_pothole_detector.ino
 ├── esp32_telegram_bridge.ino
-├── circuit-diagram.png
+├── circuitImage.png
 ├── components.md
 ├── implementation-notes.md
 ├── project-presentation.pptx
