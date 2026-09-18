@@ -1,6 +1,6 @@
 # IoT Based Pothole Detection & Alert System
 
-An IoT-based prototype for real-time pothole detection, location tracking, and alert generation using an Arduino-based sensing system, GPS, Wi-Fi communication, and a mobile/Telegram alert workflow.
+An IoT-based prototype for real-time pothole detection, location tracking, and alert generation using an Arduino-based sensing system, GPS, Wi-Fi communication, and a Telegram alert workflow.
 
 ## Project Overview
 
@@ -26,7 +26,7 @@ The system uses an Arduino Uno, ultrasonic sensor, GPS module, motor driver, mot
 - Motor driver
 - DC motors
 - ESP8266 Wi-Fi module
--  ESP32-CAM
+- ESP32-CAM
 - Buzzer
 - Jumper wires and related components
 - Power supply
@@ -49,6 +49,7 @@ The system uses an Arduino Uno, ultrasonic sensor, GPS module, motor driver, mot
 5. GPS data is read to obtain latitude and longitude.
 6. The location information is printed through the serial interface.
 7. The IoT communication section forwards alert data through Wi-Fi/Telegram.
+
 
 ## Repository Structure
 
