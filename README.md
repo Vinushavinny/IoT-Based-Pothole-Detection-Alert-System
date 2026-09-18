@@ -6,7 +6,7 @@ An IoT-based prototype for real-time pothole detection, location tracking, and a
 
 Road potholes can create safety risks for drivers and pedestrians. This project proposes an automated system that detects road-surface irregularities using ultrasonic sensing, obtains location information through GPS, and communicates an alert through IoT connectivity.
 
-The supplied project documents describe an Arduino Uno based prototype with an ultrasonic sensor, GPS module, motor driver and motors, buzzer, and Wi-Fi/IoT communication. The documents also describe ESP32-CAM/Telegram functionality for capturing and transmitting pothole information.
+The system uses an Arduino Uno, ultrasonic sensor, GPS module, motor driver, motors, buzzer, and Wi-Fi/IoT communication. The system also uses ESP32-CAM and Telegram for capturing and transmitting pothole information.
 
 ## Key Features
 
@@ -15,8 +15,8 @@ The supplied project documents describe an Arduino Uno based prototype with an u
 - Buzzer alert when a pothole is detected
 - Robot/prototype movement using motor driver and motors
 - Wi-Fi/IoT communication
-- Telegram-based alert workflow described in the project material
-- Circuit diagram and system architecture included in `images/`
+- Telegram-based alert workflow
+- Circuit diagram and system architecture included in the repository
 
 ## Hardware Components
 
@@ -26,7 +26,7 @@ The supplied project documents describe an Arduino Uno based prototype with an u
 - Motor driver
 - DC motors
 - ESP8266 Wi-Fi module
-- ESP32-CAM (described in the project documents)
+-  ESP32-CAM
 - Buzzer
 - Jumper wires and related components
 - Power supply
@@ -37,7 +37,7 @@ The supplied project documents describe an Arduino Uno based prototype with an u
 - Arduino C / Embedded C
 - TinyGPS library
 - LiquidCrystal library
-- Wi-Fi / Telegram libraries for the IoT alert portion
+- Wi-Fi / Telegram libraries
 - Serial Monitor for testing
 
 ## System Workflow
@@ -48,9 +48,7 @@ The supplied project documents describe an Arduino Uno based prototype with an u
 4. The robot can be stopped and the buzzer activated when the condition is detected.
 5. GPS data is read to obtain latitude and longitude.
 6. The location information is printed through the serial interface.
-7. The IoT communication section forwards alert data through Wi-Fi/Telegram according to the supplied implementation.
-
-> **Implementation note:** The supplied documents contain both an ESP8266-based hardware list and an ESP32/ESP32-CAM-based Telegram implementation. These are retained as documented rather than silently changing the original project description.
+7. The IoT communication section forwards alert data through Wi-Fi/Telegram.
 
 ## Repository Structure
 
@@ -59,19 +57,15 @@ IoT-Based-Pothole-Detection-Alert-System/
 ├── README.md
 ├── LICENSE
 ├── .gitignore
-├── code/
-│   ├── arduino_pothole_detector.ino
-│   └── esp32_telegram_bridge.ino
-├── hardware/
-│   └── components.md
-├── images/
-│   ├── system-architecture.png
-│   └── circuit-diagram.png
-└── docs/
-    ├── project-report.pdf
-    ├── project-review.pdf
-    ├── project-presentation.pptx
-    └── implementation-notes.md
+├── SECURITY.md
+├── arduino_pothole_detector.ino
+├── esp32_telegram_bridge.ino
+├── circuit-diagram.png
+├── components.md
+├── implementation-notes.md
+├── project-presentation.pptx
+├── project-report.pdf
+└── system-architecture.png
 ```
 
 ## Project Team
@@ -83,10 +77,10 @@ IoT-Based-Pothole-Detection-Alert-System/
 - I. Vinusha — 23BEC7371
 - Tejesh Madanwad — 23BCE7365
 
-**Guide:** Prof. Shaik Subhani  
-**University:** VIT-AP University
+Guide: Prof. Shaik Subhani  
+University: VIT-AP University
 
-## My Contribution
+ ## My Contribution
 
 I contributed to both the hardware and software aspects of the project. I worked on hardware assembly, sensor interfacing, circuit connections, Arduino-based implementation, ultrasonic sensor readings, pothole detection logic, GPS data handling, serial communication, IoT communication, testing, and troubleshooting.
 
@@ -98,12 +92,6 @@ I contributed to both the hardware and software aspects of the project. I worked
 - A dedicated mobile application and pothole map
 - Larger-scale deployment for road-condition monitoring
 
-## Important Security Note
-
-The original project material contains Wi-Fi credentials and a Telegram bot token. **Do not upload those secrets to GitHub.** The code in this repository uses placeholders instead.
-
-If the credentials shown in the original documents were real and have ever been used, change/rotate them before making the repository public.
-
 ## Disclaimer
-
-This repository is a project documentation/prototype repository based on the supplied project materials. Hardware wiring, libraries, pin assignments, and IoT configuration should be verified against the actual prototype before deployment.
+ 
+Hardware connections, pin assignments, libraries, and IoT configuration should be verified with the actual prototype before deployment.
