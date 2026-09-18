@@ -88,7 +88,7 @@ IoT-Based-Pothole-Detection-Alert-System/
 
 ## My Contribution
 
-I contributed mainly to the hardware side of the project, including hardware assembly, sensor interfacing, circuit connections, prototype testing, and troubleshooting.
+I contributed to both the hardware and software aspects of the project. I worked on hardware assembly, sensor interfacing, circuit connections, Arduino-based implementation, ultrasonic sensor readings, pothole detection logic, GPS data handling, serial communication, IoT communication, testing, and troubleshooting.
 
 ## Future Scope
 
